@@ -12,6 +12,8 @@ import React, { useState, useEffect } from 'react';
     import { createClient } from '@supabase/supabase-js';
     import { Task } from '@task-manager/shared';
     import AsyncStorage from '@react-native-async-storage/async-storage';
+    import { Link, useRouter } from 'expo-router';
+    import { StatusBar } from 'expo-status-bar';
 
     const supabaseUrl = process.env.SUPABASE_URL;
     const supabaseKey = process.env.SUPABASE_ANON_KEY;
@@ -22,6 +24,7 @@ import React, { useState, useEffect } from 'react';
       const [newTask, setNewTask] = useState('');
       const [user, setUser] = useState<any>(null);
       const [loading, setLoading] = useState(true);
+      const router = useRouter();
 
       useEffect(() => {
         const loadSession = async () => {
@@ -156,6 +159,7 @@ import React, { useState, useEffect } from 'react';
 
       return (
         <View style={styles.container}>
+          <StatusBar style="auto" />
           <Text style={styles.title}>Task Manager</Text>
           {!user ? (
             <View>

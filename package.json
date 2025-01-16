@@ -3,12 +3,15 @@
       "version": "1.0.0",
       "private": true,
       "workspaces": [
-        "packages/*",
-        "web",
-        "mobile"
+            "packages/*",
+            "web",
+            "mobile"
       ],
       "scripts": {
-        "dev": "npm run dev --workspace web",
-        "mobile": "npm run start --workspace mobile"
+            "dev": "npm run dev --workspace web",
+            "mobile": "npm run start --workspace mobile"
+      },
+      "dependencies": {
+            "expo-cli": "^6.3.10"
       }
-    }
+}
