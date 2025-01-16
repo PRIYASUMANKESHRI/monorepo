@@ -1,0 +1,41 @@
+body {
+      font-family: sans-serif;
+      margin: 20px;
+    }
+    .task-list {
+      list-style: none;
+      padding: 0;
+    }
+    .task-item {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .task-item button {
+      margin-left: 10px;
+    }
+    .completed {
+      text-decoration: line-through;
+      color: gray;
+    }
+    .auth-container {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      margin-bottom: 20px;
+    }
+    .auth-container input {
+      margin-bottom: 10px;
+      padding: 8px;
+      border: 1px solid #ccc;
+    }
+    .auth-container button {
+      padding: 8px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }

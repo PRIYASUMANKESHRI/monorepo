@@ -1,0 +1,14 @@
+{
+      "name": "task-manager-monorepo",
+      "version": "1.0.0",
+      "private": true,
+      "workspaces": [
+        "packages/*",
+        "web",
+        "mobile"
+      ],
+      "scripts": {
+        "dev": "npm run dev --workspace web",
+        "mobile": "npm run start --workspace mobile"
+      }
+    }
